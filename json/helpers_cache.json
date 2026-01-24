@@ -7476,6 +7476,42 @@
     "type": "ct"
   },
   {
+    "name": "Wordpress",
+    "slug": "wordpress",
+    "desc": "WordPress is the simplest, most popular way to create your own website or blog. In fact, WordPress powers over 43.6% of all the websites on the Internet. Yes – more than one in four websites that you visit are likely powered by WordPress.\n\nOn a slightly more technical level, WordPress is an open-source content management system licensed under GPLv2, which means that anyone can use or modify the WordPress software for free.",
+    "script": "ct/wordpress.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/wordpress.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/ct/wordpress.sh",
+    "os": "debian",
+    "categories": [
+      21
+    ],
+    "notes": [],
+    "type": "ct"
+  },
+  {
+    "name": "yt-dlp-webui",
+    "slug": "yt-dlp-webui",
+    "desc": "A not so terrible web ui for yt-dlp.\nHigh performance extendeable web ui and RPC server for yt-dlp with low impact on resources.\nCreated for the only purpose of fetching videos from my server/nas and monitor upcoming livestreams.",
+    "script": "ct/yt-dlp-webui.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/yt-dlp-webui.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/ct/yt-dlp-webui.sh",
+    "os": "debian",
+    "categories": [
+      11
+    ],
+    "notes": [
+      "Show password: `cat ~/yt-dlp-webui.creds`",
+      "The config file is located in `/opt/yt-dlp-webui/config.conf`",
+      "Make sure to either mount an external path or increase the Disk space afterwards"
+    ],
+    "type": "ct",
+    "default_credentials": {
+      "username": "admin",
+      "password": null
+    }
+  },
+  {
     "name": "Yubal",
     "slug": "yubal",
     "desc": "YouTube Music album downloader with Spotify metadata auto-tagging.",
@@ -7504,6 +7540,29 @@
       "WARNING: Installation sources scripts outside of Community Scripts repo. Please check the source before installing."
     ],
     "type": "ct"
+  },
+  {
+    "name": "Zabbix",
+    "slug": "zabbix",
+    "desc": "Zabbix is an all-in-one monitoring solution with a variety of enterprise-grade features available right out of the box.",
+    "script": "ct/zabbix.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/zabbix.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/ct/zabbix.sh",
+    "os": "debian",
+    "categories": [
+      9
+    ],
+    "notes": [
+      "Database credentials: `cat ~/zabbix.creds`",
+      "You can choose between Zabbix agent (classic) and agent2 (modern) during installation",
+      "For agent2 the PostgreSQL plugin is installed by default; all plugins are optional",
+      "If agent2 with NVIDIA plugin is installed in an environment without GPU, the installer disables it automatically"
+    ],
+    "type": "ct",
+    "default_credentials": {
+      "username": "Admin",
+      "password": "zabbix"
+    }
   },
   {
     "name": "Zammad",
