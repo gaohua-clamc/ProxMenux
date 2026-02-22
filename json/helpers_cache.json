@@ -1203,6 +1203,23 @@
     }
   },
   {
+    "name": "CR*NMASTER",
+    "slug": "cronmaster",
+    "desc": "Self-hosted cron job scheduler with web UI, live logs, auth and prebuilt binaries provided upstream.",
+    "script": "tools/addon/cronmaster.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/tools/addon/cronmaster.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/tools/addon/cronmaster.sh",
+    "os": "generic",
+    "categories": [
+      1
+    ],
+    "notes": [
+      "Credentials are saved to: /root/cronmaster.creds",
+      "Update with: update_cronmaster"
+    ],
+    "type": "addon"
+  },
+  {
     "name": "cross-seed",
     "slug": "cross-seed",
     "desc": "cross-seed is an app designed to help you download torrents that you can cross seed based on your existing torrents. It is designed to match conservatively to minimize manual intervention.",
@@ -2326,6 +2343,23 @@
       "username": "admin",
       "password": "admin"
     }
+  },
+  {
+    "name": "Gramps Web",
+    "slug": "gramps-web",
+    "desc": "Gramps Web is a collaborative genealogy platform for browsing, editing and sharing family trees through a modern web interface.",
+    "script": "ct/gramps-web.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/gramps-web.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/ct/gramps-web.sh",
+    "os": "debian",
+    "categories": [
+      12
+    ],
+    "notes": [
+      "On first access, create the owner account via the built-in onboarding wizard.",
+      "The initial deployment compiles the frontend and can take several minutes."
+    ],
+    "type": "ct"
   },
   {
     "name": "Graylog",
