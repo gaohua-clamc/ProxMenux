@@ -807,10 +807,13 @@
       4
     ],
     "notes": [
-      "No credentials are set by this script. Complete setup and create credentials in the first-run wizard.",
       "Upload your Calibre library metadata.db during first setup wizard."
     ],
-    "type": "ct"
+    "type": "ct",
+    "default_credentials": {
+      "username": "admin",
+      "password": "admin123"
+    }
   },
   {
     "name": "CasaOS",
@@ -2021,6 +2024,23 @@
     "notes": [
       "Database credentials: `cat ~/freshrss.creds`",
       "Per FreshRSS documentation, a cron job to actualize FreshRSS will be setup at `/etc/cron.d/freshrss-actualize`. This can be adjusted as needed"
+    ],
+    "type": "ct"
+  },
+  {
+    "name": "Frigate",
+    "slug": "frigate",
+    "desc": "Frigate is a complete and local NVR (Network Video Recorder) with realtime AI object detection for CCTV cameras.",
+    "script": "ct/frigate.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/frigate.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/ct/frigate.sh",
+    "os": "debian",
+    "categories": [
+      15
+    ],
+    "notes": [
+      "SemanticSearch is not pre-installed due to high resource requirements (8+ cores, 16-24GB RAM, GPU recommended). Manual configuration required if needed.",
+      "OpenVino detector may fail on older CPUs (pre-Haswell/AVX2). If you encounter 'Illegal instruction' errors, consider using alternative detectors."
     ],
     "type": "ct"
   },
@@ -6518,6 +6538,20 @@
     "os": "debian",
     "categories": [
       14
+    ],
+    "notes": [],
+    "type": "ct"
+  },
+  {
+    "name": "SparkyFitness",
+    "slug": "sparkyfitness",
+    "desc": "A self-hosted, privacy-first alternative to MyFitnessPal. Track nutrition, exercise, body metrics, and health data while keeping full control of your data.",
+    "script": "ct/sparkyfitness.sh",
+    "script_url": "https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/sparkyfitness.sh",
+    "script_url_mirror": "https://git.community-scripts.org/community-scripts/ProxmoxVE/raw/branch/main/ct/sparkyfitness.sh",
+    "os": "debian",
+    "categories": [
+      9
     ],
     "notes": [],
     "type": "ct"
